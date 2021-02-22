@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="tool_bar">#99EC39</color>
+
+
+    <color name="color_app_bar">#6200EE</color>
+    <color name="backgr_home">#ECE9EC</color>
+    <color name="bgr_btn_language">#2196F3</color>
+    <color name="bgr_btn_language_none">#D1D6D6</color>
+    <color name="text_btn_add_cart">#fff</color>
+    <color name="bgr_btn_add_cart">#2196F3</color>
+    <color name="text_login">#fff</color>
+    <color name="btn_login">#2196F3</color>
+</resources>

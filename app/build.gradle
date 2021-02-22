@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+apply plugin: "androidx.navigation.safeargs"
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.example.myapplication"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding{
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.navigation:navigation-fragment:2.3.1'
+    implementation 'androidx.navigation:navigation-ui:2.3.1'
+    implementation "android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha05"
+    implementation "android.arch.navigation:navigation-ui-ktx:1.0.0-alpha05"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    compile 'com.ms-square:expandableTextView:0.1.4'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.3'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+
+    implementation 'com.facebook.stetho:stetho:1.5.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation "androidx.cardview:cardview:1.0.0"
+}

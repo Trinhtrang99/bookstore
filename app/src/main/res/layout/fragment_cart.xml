@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgr_home"
+        android:padding="@dimen/_5sdp"
+        tools:context=".Fragment.FragmentCart">
+
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backgr_home">
+
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swiperefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listBookInCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="600dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+            <Button
+                android:id="@+id/btnBuy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@drawable/btn_add_cart"
+                android:text="@string/buy">
+
+            </Button>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>
